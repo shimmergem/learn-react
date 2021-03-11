@@ -1,7 +1,7 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 import { DateProvider, ThemeProvider, UserProvider } from '../Context';
 import ConsumerPage from './ConsumerPage'
-import { DatePage } from './DatePage';
+import DatePage from './DatePage';
 import UseContextPage from './UseContextPage'
 
 export default class ContextPage extends Component {
@@ -16,11 +16,12 @@ export default class ContextPage extends Component {
     }
   }
   increase() {
-    this.state.counter += 1
-    this.setState({...this.state})
+    let counter = this.state.counter + 1
+    this.setState({...this.state, counter})
   }
   render() {
     const { theme, user, counter } = this.state
+    console.log(`ContextPage render`)
     return (
       <div>
         <h3>ContextPage: {counter}</h3>

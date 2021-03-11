@@ -1,10 +1,10 @@
 import React from  'react'
-import ContextPage from './pages/ContextPage'
-
+import './App.css'
+import { Button } from 'antd'
 function App() {
   return (
     <div className="App">
-      <ContextPage />
+      <Button type="primary">Button</Button>
     </div>
   );
 }

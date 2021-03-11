@@ -1,4 +1,4 @@
-import react, {useContext} from 'react'
+import React, {useContext} from 'react'
 import {ThemeContext, UserContext} from '../Context'
 
 export default function UserContextPage(props) {

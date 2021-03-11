@@ -1,8 +1,9 @@
-import react, { Component } from 'react'
+import React, { Component } from 'react'
 import { ThemeConsumer, UserConsumer } from '../Context'
 
 export default class ConsumerPage extends Component {
   render() {
+    console.log(`ConsumerPage render`)
     return (
       <div>
         <h3>ConsumerPage</h3>
